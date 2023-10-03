@@ -11,7 +11,13 @@ function limparDisplay() { // essa função limpa o valor no display
 function calcularResultado() {
     const display = document.getElementById('display');
     try {
-        display.value = eval(display.value);
+        let expressao = display.value;
+
+        // Substituir '%' por '/100' na expressão
+        expressao = expressao.replace(/%/g, '/100');
+
+        let resultado = eval(expressao);
+        display.value = resultado;
     } catch (error) {
         display.value = 'Erro';
     }
