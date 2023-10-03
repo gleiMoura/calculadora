@@ -1,0 +1,17 @@
+.calculadora {
+    width: 450px;
+    height: 250px;
+    background-color: pink;
+    padding: 20px
+}
+
+.calculadora button {
+    width: 100px;
+    height: 50px;
+}
+
+.calculadora input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 10px;
+}
